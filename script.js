@@ -8,11 +8,11 @@ function convert() {
   if (toFahrenheit.checked) {
     temp = Number(textBox.value);
     temp = (temp * 9 / 5) + 32;
-    result.innerHTML = `${temp.toFixed(1)} &degF`;
+    result.innerHTML = `${temp} &degF`;
   } else if (toCelsius.checked) {
     temp = Number(textBox.value);
-    temp = (temp - 32) * (5 / 9);
-    result.innerHTML = `${temp.toFixed(1)} &degC`;
+    temp = (temp - 32) * 9/5;
+    result.innerHTML = `${temp} &degC`;
   }
   else {
     result.textContent = "Select a unit"
