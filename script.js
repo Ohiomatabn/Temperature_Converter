@@ -11,7 +11,7 @@ function convert() {
     result.innerHTML = `${temp} &degF`;
   } else if (toCelsius.checked) {
     temp = Number(textBox.value);
-    temp = (temp - 32) * 9/5;
+    temp = (temp - 32) * (9/5);
     result.innerHTML = `${temp} &degC`;
   }
   else {
